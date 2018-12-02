@@ -1,10 +1,13 @@
-# echo-autotls
-HTTPS server using certificates automatically installed from https://letsencrypt.org
+package main
 
+import (
+	"net/http"
 
-## Usage
+	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
+	"github.com/wangxianzhuo/echo-autotls"
+)
 
-```go
 func main() {
 	e := echo.New()
 	e.Pre(middleware.HTTPSRedirect())
@@ -24,4 +27,3 @@ func main() {
 	// m.Cache = autocert.DirCache("/var/www/.cache")
 	// e.Logger.Fatal(e.StartServer(m.StartAutoTLS(":443")))
 }
-```
