@@ -1,6 +1,10 @@
 # echo-autotls
 HTTPS server using certificates automatically installed from https://letsencrypt.org
 
+## Archived
+
+The problem [#1231](https://github.com/labstack/echo/issues/1231) has been solved [#1305](https://github.com/labstack/echo/pull/1305)
+
 
 ## Usage
 
